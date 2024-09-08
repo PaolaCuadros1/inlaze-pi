@@ -33,4 +33,8 @@ export class UsersService {
   async remove(id: number) {
     return await this.userRepository.softDelete(id);
   }
+
+  async findByEmail(email: string){
+    return this.userRepository.findOneBy({email});
+  }
 }
