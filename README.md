@@ -22,6 +22,21 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+# Full-Stack Technical Test
+
+## Aim
+
+Project created to demonstrate knowledge related to NestJS, TypeScript, relation DB, and good practices for the Full-Stack position at Inlaze.
+
+## Frameworks and technologies used
+
+- NestJS
+- TypeScript
+- MySQL
+- JWT
+
+You can see the app in this [link]() 
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
