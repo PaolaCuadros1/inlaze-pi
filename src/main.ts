@@ -4,6 +4,9 @@ import { ValidationPipe } from '@nestjs/common/pipes/validation.pipe';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { json, urlencoded } from 'express';
+import { config } from 'dotenv'
+
+config()
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -17,7 +20,7 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .addBearerAuth()
     .setTitle('Documentación API prueba Paola Cuadros')
-    .setDescription('Esta es la documentación creada para la Prueba Técnica Full-Stack')
+    .setDescription('Esta es la documentación creada para la Prueba Técnica Full-Stack, url: https://inlaze-api.tintosoft.co/api/v1')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, options);
@@ -31,6 +34,6 @@ async function bootstrap() {
     })
   );
 
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(process.env.PORT || 8081);
 }
 bootstrap();
